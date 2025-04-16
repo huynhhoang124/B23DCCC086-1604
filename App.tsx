@@ -28,10 +28,9 @@ const App: React.FC = () => {
         </Header>
 
         <Layout style={{ marginTop: 64 }}>
-          {/* Sidebar - optional */}
+          {/* Sidebar (có thể sử dụng hoặc bỏ qua) */}
           <Sider width={200} style={{ background: '#fff' }} />
-
-          {/* Content area */}
+          
           <Layout style={{ padding: '0 24px 24px' }}>
             <Content
               style={{
@@ -41,11 +40,10 @@ const App: React.FC = () => {
               }}
             >
               <Switch>
-                {/* Điều hướng đến các trang */}
+                {/* Các route điều hướng đến các trang */}
                 <Route path="/admin/dashboard" component={Dashboard} />
                 <Route path="/admin/destinations" component={DestinationManager} />
                 <Route path="/admin/statistics" component={Statistics} />
-                {/* Trang chủ */}
                 <Route path="/" exact>
                   <h1>Trang Chủ</h1>
                 </Route>

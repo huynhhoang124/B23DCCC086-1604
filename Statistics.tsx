@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Col, Row, Statistic, message } from 'antd';
+import { Card, Col, Row, Statistic, message, Typography } from 'antd';
 import { getStatistics } from '../api/api'; // Import từ api.ts
+
+const { Title } = Typography;
 
 const Statistics: React.FC = () => {
   const [statistics, setStatistics] = useState<any>(null);
@@ -20,7 +22,7 @@ const Statistics: React.FC = () => {
 
   return (
     <div style={{ padding: 20 }}>
-      <h2>Thống kê</h2>
+      <Title level={3}>Thống kê</Title>
       <Row gutter={[16, 16]}>
         <Col span={12}>
           <Card>

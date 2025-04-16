@@ -1,0 +1,8 @@
+/src
+  /components
+    - Dashboard.tsx             # Trang Dashboard tổng quan
+    - DestinationManager.tsx    # Quản lý điểm đến
+    - Statistics.tsx            # Thống kê
+  /api
+    - api.ts                    # Các API backend (giả định)
+  App.tsx                       # Điều hướng giữa các trang
